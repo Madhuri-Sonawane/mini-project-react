@@ -1,0 +1,24 @@
+createRoot method:
+
+- it create DOM (Tree) like structure.
+- it create it's own DOM and compare it's DOM and User's main DOM and update only those things which updated in UI.
+- U can trace DOM in virtual DOM.
+
+\*React Fibre Architecture:
+
+- \*key features:
+
+  - assign to priority
+  - ability to pause , abort
+
+- fibre is well implemented.
+- \*Reconcillation: - It reconsider whoch element has to update and which is not. - it is recursive algorithm. - definition: the algorithm React uses to diffrentitiate one tree with another to determine which parameter needs to be changed. - it also called "Virtual DOM".
+
+- React uses keys to diffrentitiate the element ,keys should be "stable,predictableand unique".
+
+\*what is fibre?
+
+- pause work and come back to it later.
+- assign priority to diffrent types of work.
+- reuse previously complete work.
+- abort work if it's no longer.
